@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Hungry</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html">
+                <img class="logo" src="me-hungry-logo.png" alt="logo">
+            </a>
+
+        </nav>
+    </header>
+    <main>
+        <!--Searchbar-->
+        <div id="search">
+            <h2 id="search-text">Search for a recipe</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Recipe" id="recipe-search">
+                <button id="button" class="search-btn btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <!--Random recipe button-->
+            <a href="recipe-random.html"><button class="random-recipe-btn">Random Recepie</button></a>
+        </div>
+        <!--carousel-->
+        <div id="carousel">
+            <h3>Desserts</h3>
+            <div id="dessert-slides">
+            </div>
+            <button id="previous" class="carousel-button">
+                <i class="bi bi-arrow-left-circle">
+                </i>
+
+            </button>
+            <button id="next" class="carousel-button">
+                <i class="bi bi-arrow-right-circle">
+                </i>
+
+            </button>
+            <!--Search results-->
+        </div>
+        <div id="result-page">
+            <h3 id="search-result-text">Search results:</h3>
+            <div id="meal">
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
